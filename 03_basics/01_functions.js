@@ -30,3 +30,23 @@ function loginUserMessage (userName = "Sam"){
 }
 console.log(loginUserMessage())
 console.log(loginUserMessage("Indranil"))
+
+function calculateCartPrice (...num1){  // Spread operator (...)
+    return num1
+}
+console.log(calculateCartPrice(100, 200, 500));
+
+
+const user = {
+    name: "Indra",
+    age: 25
+}
+
+function handledObject (anyObject){
+    console.log(`username is ${anyObject.name} and age is ${anyObject.age}`)
+}
+handledObject(user)
+handledObject({
+    name: "Sam",
+    age: 25
+})
